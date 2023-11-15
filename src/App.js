@@ -28,10 +28,10 @@ function App() {
     e.preventDefault();
 
     const product = {
-      //Se o valor do useState for o mesmo da chave do obj
-      //pode colocar somente o nome sem precisar de name= name...
-      name,
-      price,
+      //Se o valor do useState/variavel for o mesmo da chave do obj
+      //pode colocar somente name, price,...
+      name: name,
+      price: price,
     }; 
 
     const res = await fetch(url, {
