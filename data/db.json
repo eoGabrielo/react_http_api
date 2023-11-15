@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Lâmpada",
+      "price": 10.99
+    },
+    {
+      "id": 2,
+      "name": "Mesa de Jantar",
+      "price": 15.49
+    },
+    {
+      "id": 3,
+      "name": "Cadeira de Escritório",
+      "price": 22.99
+    },
+    {
+      "id": 4,
+      "name": "Cafeteira",
+      "price": 8.99
+    },
+    {
+      "id": 5,
+      "name": "Livro de Ficção",
+      "price": 32.99
+    },
+    {
+      "id": 6,
+      "name": "Bicicleta",
+      "price": 5.99
+    },
+    {
+      "id": 7,
+      "name": "Fone de Ouvido",
+      "price": 18.99
+    },
+    {
+      "id": 8,
+      "name": "Ventilador de Teto",
+      "price": 12.99
+    },
+    {
+      "id": 9,
+      "name": "Notebook",
+      "price": 28.99
+    },
+    {
+      "id": 10,
+      "name": "Mala de Viagem",
+      "price": 14.99
+    },
+    {
+      "name": "Tenis Nike",
+      "price": "799",
+      "id": 11
+    },
+    {
+      "name": "Relogio",
+      "price": "1555",
+      "id": 12
+    }
+  ]
+}
