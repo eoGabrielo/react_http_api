@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 
-// npm run server -> iniciar API json 3000, npm start -> iniciar react 3001
+// npm run server -> iniciar servidor da API json na porta 3000.
+// npm start -> iniciar servidor react na porta 3001.
 
-//Servidor api abre local porta 3000/products - URL API.
+//Url que o servidor da api vai abrir.
 const url = "http://localhost:3000/products";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
 
-  //requisição a API
+  //requisição a API, busca os dados da api p/ atribuir a variavel useState "products".
   useEffect(() => {
     async function fetchData(){
       const res = await fetch(url);
