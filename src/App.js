@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import {useState } from 'react';
 import './App.css';
+import {useFetch} from "./hook/useFetch";
 
 // npm run server -> iniciar servidor da API json na porta 3000.
 // npm start -> iniciar servidor react na porta 3001.
@@ -11,30 +12,24 @@ function App() {
 
   const [products, setProducts] = useState([]);
 
+  //Uso do custom Hook para faze requisilçao a API
+  //{data} o return da function/codigo do hook, = useFetch() a function do hook
+  //Dentro dos parametros a url da api.
+  const {data} = useFetch(url);
+
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
-
-  //requisição a API, busca os dados da api p/ atribuir a variavel useState "products".
-  useEffect(() => {
-    async function fetchData(){
-      const res = await fetch(url);
-      const data = await res.json()
-      setProducts(data);
-    }
-
-    fetchData();
-  },[]);
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
 
+    //Objeto para receber os valores e ser enviado para api.
     const product = {
-      //Se o valor do useState/variavel for o mesmo da chave do obj
-      //pode colocar somente name, price,...
       name: name,
       price: price,
     }; 
 
+    //Requisiçao de envio "POST", informada a url da api junto com informaçoes do tipo de dado a ser enviado.
     const res = await fetch(url, {
       method: "POST",
       headers: {
@@ -43,8 +38,10 @@ function App() {
       body: JSON.stringify(product), 
     });
 
+    //Converte o corpo da requisilçao em JSON, até aqui era OBJ/JS.
     const addedProduct = await res.json();
     
+    //Adicionar mais um valor a uma variavel useState de array, é preciso dessa function com o prev!!!
     setProducts((prevProduts) => [...prevProduts, addedProduct]);
 
     setName("");
@@ -55,10 +52,11 @@ function App() {
     <div className="App">
      <h1>Lista de produtos</h1>
      <ul>
-     {products.map((product) => (
+     {data.map((product) => (
       <li key={product.id}>{product.name} - R${product.price}</li>
      ))}
      </ul>
+     {/*Propiedade "value" do input, recebe o useState, assim fica mais facil de manipular seu valor.*/}
       <form onSubmit={handleSubmit}>
         <label>
           Nome:
