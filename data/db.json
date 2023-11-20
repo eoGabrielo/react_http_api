@@ -49,21 +49,6 @@
       "id": 10,
       "name": "Mala de Viagem",
       "price": 14.99
-    },
-    {
-      "name": "Teclado",
-      "price": "90",
-      "id": 11
-    },
-    {
-      "name": "Mouse",
-      "price": "344",
-      "id": 12
-    },
-    {
-      "name": "bola",
-      "price": "32",
-      "id": 13
     }
   ]
 }

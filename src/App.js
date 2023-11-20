@@ -12,10 +12,11 @@ function App() {
 
   const [products, setProducts] = useState([]);
 
-  //Uso do custom Hook para faze requisilçao a API
+  //Uso do custom Hook para fazer requisiçao a API
   //{data} o return da function/codigo do hook, = useFetch() a function do hook
   //Dentro dos parametros a url da api.
-  const {data} = useFetch(url);
+  //data -> Com os dados da api.
+  const {data, httpConfig} = useFetch(url);
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
@@ -29,20 +30,8 @@ function App() {
       price: price,
     }; 
 
-    //Requisiçao de envio "POST", informada a url da api junto com informaçoes do tipo de dado a ser enviado.
-    const res = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(product), 
-    });
-
-    //Converte o corpo da requisilçao em JSON, até aqui era OBJ/JS.
-    const addedProduct = await res.json();
-    
-    //Adicionar mais um valor a uma variavel useState de array, é preciso dessa function com o prev!!!
-    setProducts((prevProduts) => [...prevProduts, addedProduct]);
+    //Chamada para enviar os dados via method POST
+    httpConfig(product, "POST")
 
     setName("");
     setPrice("");
