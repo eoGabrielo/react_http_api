@@ -5,7 +5,8 @@ import {useFetch} from "./hook/useFetch";
 // npm run server -> iniciar servidor da API json na porta 3000.
 // npm start -> iniciar servidor react na porta 3001.
 
-//Url que o servidor da api vai abrir.
+//Url da api json local, se a porta for diferente de 3001 retorna erro
+//Graças ao custom hook que tem um useState que armazena o erro de uma try and catch
 const url = "http://localhost:3000/products";
 
 function App() {
@@ -16,10 +17,11 @@ function App() {
   //{data} o return da function/codigo do hook, = useFetch() a function do hook
   //Dentro dos parametros a url da api.
   //data -> Com os dados da api.
-  const {data, httpConfig} = useFetch(url);
+  const {data, httpConfig, loading, error} = useFetch(url);
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
+
 
   const handleSubmit = async (e) =>{
     e.preventDefault();
@@ -39,12 +41,15 @@ function App() {
 
   return (
     <div className="App">
+      {loading && <p>CARREGANDO...</p>}
      <h1>Lista de produtos</h1>
+     {error ? <p>{error}</p> : (
      <ul>
      {data.map((product) => (
       <li key={product.id}>{product.name} - R${product.price}</li>
      ))}
      </ul>
+     )}
      {/*Propiedade "value" do input, recebe o useState, assim fica mais facil de manipular seu valor.*/}
       <form onSubmit={handleSubmit}>
         <label>
@@ -55,7 +60,8 @@ function App() {
           Preço:
           <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} />
         </label>
-        <input type="submit" value="Criar" />
+        {!loading ? <input type="submit" value="Criar"/>  : <input type="submit" disabled value="Enviando..."/> 
+        }
       </form>
     </div>
   );

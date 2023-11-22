@@ -7,7 +7,10 @@ export const useFetch = (url) => {
   const [method, setMethod] = useState(null)
   const [callFetch, setCallFetch] = useState(false);
 
-
+  const [loading, setLoading] = useState(false);
+  //try and catch
+  const [error, setError] = useState(null);
+ 
   //Function que verifica se o method foi POST, se for o useState config recebe as configuração de envio/post
   //Esse function é chamada no componente, passando o objeto com os valores a ser enviado e o method
   const httpConfig = (data, method) => {
@@ -26,10 +29,20 @@ export const useFetch = (url) => {
   //useEffect que faz a requisição de dados, busca os dados na api
   useEffect(() => {
     const fetchData = async () => {
+
+      setLoading(true)
+
+      try{
         const res = await fetch(url);
         const json = await res.json();
         setData(json);
+
+      }catch (error){
+        setError("Erro ao buscar dados: " + error.message);
+      }
+        setLoading(false)
     }
+
     fetchData();
   },[url, callFetch])
 
@@ -48,6 +61,6 @@ export const useFetch = (url) => {
   },[config, method, url])
 
   //Como é um hookCustom, exportamos a requisilçao que ta em "data" e o method de envio "POST" que está em httpConfig
-  return{data, httpConfig};
+  return{data, httpConfig, loading, error};
 }
 

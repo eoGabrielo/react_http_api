@@ -21,34 +21,14 @@
       "price": 8.99
     },
     {
-      "id": 5,
-      "name": "Livro de Ficção",
-      "price": 32.99
+      "name": "Banana",
+      "price": "566",
+      "id": 5
     },
     {
-      "id": 6,
-      "name": "Bicicleta",
-      "price": 5.99
-    },
-    {
-      "id": 7,
-      "name": "Fone de Ouvido",
-      "price": 18.99
-    },
-    {
-      "id": 8,
-      "name": "Ventilador de Teto",
-      "price": 12.99
-    },
-    {
-      "id": 9,
-      "name": "Notebook",
-      "price": 28.99
-    },
-    {
-      "id": 10,
-      "name": "Mala de Viagem",
-      "price": 14.99
+      "name": "Lapiseira",
+      "price": "999",
+      "id": 6
     }
   ]
 }
