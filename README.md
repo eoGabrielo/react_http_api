@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+Projeto de Formulário em React
+Este projeto consiste em uma aplicação React simples que permite aos usuários interagir com uma lista de produtos por meio de um formulário. Os usuários podem adicionar novos produtos à lista, inserindo o nome e o preço do produto. A aplicação utiliza um hook personalizado para obter dados de uma API JSON local.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Como Iniciar
+Para executar o projeto localmente, siga os passos abaixo:
 
-## Available Scripts
+Certifique-se de ter o Node.js e o npm instalados em sua máquina.
 
-In the project directory, you can run:
+Clone este repositório para sua máquina local.
 
-### `npm start`
+Navegue até o diretório do projeto no terminal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Instale as dependências com o comando:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+npm install
+Inicie o servidor da API JSON:
 
-### `npm test`
+bash
+Copy code
+npm run server
+Isso iniciará o servidor da API JSON em http://localhost:3000/products.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Em uma nova janela do terminal, inicie a aplicação React:
 
-### `npm run build`
+bash
+Copy code
+npm start
+Isso iniciará a aplicação React em http://localhost:3001.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Recursos
+Visualize uma lista de produtos.
+Adicione novos produtos usando o formulário fornecido.
+Atualizações em tempo real com indicadores de carregamento.
+Tratamento de erros para solicitações de API mal-sucedidas.
+Utilização
+Acesse a aplicação React em seu navegador em http://localhost:3001.
+Explore a lista de produtos.
+Utilize o formulário para adicionar novos produtos, inserindo o nome e o preço.
+Envie o formulário para criar um novo produto.
+Estrutura do Projeto
+App.js: Componente principal contendo a lógica do formulário e da lista de produtos.
+useFetch.js: Hook personalizado para obter dados da API JSON local.
+App.css: Estilos para a aplicação.
+Dependências
+React
+useFetch - Hook personalizado para obtenção de dados
+Desenvolvimento
+Sinta-se à vontade para explorar, modificar e aprimorar o projeto de acordo com suas necessidades. Se encontrar problemas ou tiver sugestões, por favor entrar em contato.
