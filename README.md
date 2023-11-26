@@ -58,4 +58,4 @@ Para executar o projeto localmente, siga os passos abaixo:
 
 ## Desenvolvimento
 
-Sinta-se à vontade para explorar, modificar e aprimorar o projeto de acordo com suas necessidades. Se encontrar problemas ou tiver sugestões, por favor [abra uma issue](https://github.com/seu-nome/seu-repositorio/issues).
+Sinta-se à vontade para explorar, modificar e aprimorar o projeto de acordo com suas necessidades. Se encontrar problemas ou tiver sugestões, por favor entre em contato.
