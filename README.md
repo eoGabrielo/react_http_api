@@ -59,3 +59,13 @@ Para executar o projeto localmente, siga os passos abaixo:
 ## Desenvolvimento
 
 Sinta-se à vontade para explorar, modificar e aprimorar o projeto de acordo com suas necessidades. Se encontrar problemas ou tiver sugestões, por favor entre em contato.
+
+# Projeto de Formulário em React (Desenvolvido para Fins de Aprendizado Pessoal)
+
+Este projeto foi criado como parte do meu processo de aprendizado em React. A ênfase principal foi na exploração prática dos conceitos fundamentais, especialmente na construção de formulários e na integração com APIs em um ambiente React.
+
+Dado o caráter educacional pessoal deste projeto, optei por simplificar os detalhes visuais e minimizar comentários extensos no código. A intenção é que o código sirva como uma ferramenta de revisão para mim mesmo, promovendo uma compreensão profunda das funcionalidades essenciais do React.
+
+Ao desenvolver este projeto, busquei uma abordagem que me permitisse experimentar, testar e compreender o funcionamento interno do React, sem a necessidade de uma preocupação excessiva com aspectos visuais ou documentação detalhada.
+
+Este projeto representa um marco no meu percurso de aprendizado em React, e estou aberto a futuras modificações e expansões à medida que continuo a aprimorar minhas habilidades. Se surgirem dúvidas ou sugestões, ficarei feliz em explorá-las, pois a iteração e o aprendizado contínuo são essenciais para o meu crescimento como desenvolvedor React.
