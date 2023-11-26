@@ -60,12 +60,12 @@ Para executar o projeto localmente, siga os passos abaixo:
 
 Sinta-se à vontade para explorar, modificar e aprimorar o projeto de acordo com suas necessidades. Se encontrar problemas ou tiver sugestões, por favor entre em contato.
 
-# Projeto de Formulário em React (Desenvolvido para Fins de Aprendizado Pessoal)
+# Projeto de Formulário em React (Desenvolvido para Estudo Pessoal)
 
-Este projeto foi criado como parte do meu processo de aprendizado em React. A ênfase principal foi na exploração prática dos conceitos fundamentais, especialmente na construção de formulários e na integração com APIs em um ambiente React.
+Esse projeto é mais uma etapa do meu aprendizado em React. A ideia aqui foi mergulhar nos conceitos, especialmente na criação de formulários e na integração com APIs no universo React.
 
-Dado o caráter educacional pessoal deste projeto, optei por simplificar os detalhes visuais e minimizar comentários extensos no código. A intenção é que o código sirva como uma ferramenta de revisão para mim mesmo, promovendo uma compreensão profunda das funcionalidades essenciais do React.
+Como o foco é mais no aprendizado do que em mostrar pro mundo, simplifiquei as partes visuais e não enchi muito o código com comentários. A intenção é que o código seja como meu caderno de estudo, onde consigo revisar e entender bem os fundamentos do React.
 
-Ao desenvolver este projeto, busquei uma abordagem que me permitisse experimentar, testar e compreender o funcionamento interno do React, sem a necessidade de uma preocupação excessiva com aspectos visuais ou documentação detalhada.
+Enquanto mexia nesse projeto, foquei em testar, experimentar e realmente entender como o React funciona por dentro, sem ficar muito preocupado com detalhes visuais ou documentação super detalhada.
 
-Este projeto representa um marco no meu percurso de aprendizado em React, e estou aberto a futuras modificações e expansões à medida que continuo a aprimorar minhas habilidades. Se surgirem dúvidas ou sugestões, ficarei feliz em explorá-las, pois a iteração e o aprendizado contínuo são essenciais para o meu crescimento como desenvolvedor React.
+Esse projeto representa uma fase do meu aprendizado em React, e estou totalmente aberto a fazer ajustes e adicionar mais coisas à medida que continuo aperfeiçoando minhas habilidades. Se surgir alguma dúvida ou ideia, estou à disposição, porque essa troca é fundamental para meu crescimento como desenvolvedor React.
