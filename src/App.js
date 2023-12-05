@@ -13,10 +13,7 @@ function App() {
 
   const [products, setProducts] = useState([]);
 
-  //Uso do custom Hook para fazer requisiçao a API
-  //{data} o return da function/codigo do hook, = useFetch() a function do hook
-  //Dentro dos parametros a url da api.
-  //data -> Com os dados da api.
+  //Uso do custom Hook para fazer requisiçao, envio post e funcionalidades.
   const {data, httpConfig, loading, error} = useFetch(url);
 
   const [name, setName] = useState("");
@@ -26,7 +23,7 @@ function App() {
   const handleSubmit = async (e) =>{
     e.preventDefault();
 
-    //Objeto para receber os valores e ser enviado para api.
+    //Objeto para receber os valores e ser enviado para api em formato objeto json.
     const product = {
       name: name,
       price: price,
