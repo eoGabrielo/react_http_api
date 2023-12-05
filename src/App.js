@@ -29,7 +29,7 @@ function App() {
       price: price,
     }; 
 
-    //Chamada para enviar os dados via method POST
+    //Chamada para enviar os dados via method POST, custom hook
     httpConfig(product, "POST")
 
     setName("");
