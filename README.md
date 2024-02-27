@@ -1,6 +1,6 @@
 # Projeto de Formulário em React
 
-Este projeto consiste em uma aplicação React simples que permite aos usuários interagir com uma lista de produtos por meio de um formulário. Os usuários podem adicionar novos produtos à lista, inserindo o nome e o preço do produto. A aplicação utiliza um hook personalizado para obter dados de uma API JSON local.
+Este projeto consiste em uma aplicação React que permite aos usuários interagir com uma lista de produtos por meio de um formulário. Os usuários podem adicionar novos produtos à lista, inserindo o nome e o preço do produto. A aplicação utiliza um hook personalizado para obter dados de uma API JSON local.
 
 ## Como Iniciar
 
